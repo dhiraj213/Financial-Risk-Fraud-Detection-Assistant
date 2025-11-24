@@ -1,0 +1,6 @@
+id,date,merchant,amount,category
+1,2023-10-01,Amazon,500,Shopping
+2,2023-10-01,Unknown,12000,Transfer
+3,2023-10-02,Starbucks,15,Food
+4,2023-10-02,Apple Store,95000,Electronics
+5,2023-10-03,Uber,45,Transport
