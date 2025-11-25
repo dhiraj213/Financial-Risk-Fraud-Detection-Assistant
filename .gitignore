@@ -1,0 +1,85 @@
+# ============================
+# General OS Files
+# ============================
+.DS_Store
+Thumbs.db
+
+# ============================
+# Editor / IDE Files
+# ============================
+.vscode/
+.idea/
+*.log
+
+# ============================
+# Python (Backend)
+# ============================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+.venv/
+env/
+backend/venv/
+backend/.venv/
+
+# Byte-compiled / optimized files
+*.pyo
+*.pyd
+
+# ============================
+# Environment Variables (IMPORTANT — Protect API Keys)
+# ============================
+.env
+.env.local
+backend/.env
+frontend/.env
+
+# ============================
+# Node / React / Next.js (Frontend)
+# ============================
+node_modules/
+frontend/node_modules/
+frontend/build/
+frontend/.next/
+frontend/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ============================
+# Data Files (Local Only)
+# ============================
+*.csv
+*.xlsx
+*.xls
+*.pdf
+*.jsonl
+
+# Exception: keep ONLY this sample file (optional)
+!backend/samples/sample_transactions.csv
+
+# ============================
+# Docker Files
+# ============================
+.docker/
+docker-data/
+*.tar
+
+# ============================
+# Logs & Temp
+# ============================
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# ============================
+# Build Artifacts
+# ============================
+dist/
+build/
+*.egg-info/

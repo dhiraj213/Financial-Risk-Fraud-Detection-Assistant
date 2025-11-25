@@ -1,38 +1,132 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Base Styles */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  font-family: 'Inter', sans-serif;
+  padding: 40px 20px;
+  background-color: #0d1117; /* Dark background (GitHub/Data Studio style) */
+  color: #c9d1d9; /* Light gray text */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* Header */
+.App h1 {
+  color: #4CAF50; /* Green highlight for "Fraud Agent" */
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #238636;
+  padding-bottom: 10px;
+}
+
+/* File Input & Button Container */
+.input-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #161b22;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* Custom Button Styling */
+.input-container button {
+  background-color: #238636; /* GitHub Green */
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.input-container button:hover:not(:disabled) {
+  background-color: #3fb950;
+  transform: translateY(-1px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-container button:disabled {
+  background-color: #30363d;
+  cursor: not-allowed;
+}
+
+/* Status and Job ID */
+.status-info {
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  background-color: #161b22;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Report Card Styling */
+.report-card {
+  width: 90%;
+  max-width: 1200px;
+  border: 1px solid #30363d;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: left;
+  background-color: #161b22;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+}
+
+.report-card h2 {
+  color: #4CAF50;
+  border-bottom: 1px dashed #30363d;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Summary Box */
+.summary-box {
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  padding: 15px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+}
+
+.summary-box strong {
+  color: #e3b341; /* Yellow for highlights */
+}
+
+/* Table Styling */
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.transaction-table th, .transaction-table td {
+  padding: 12px;
+  border: 1px solid #30363d;
+  font-size: 0.9rem;
+}
+
+.transaction-table th {
+  background-color: #21262d;
+  color: #f0f6fc;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* Anomaly Row Highlight */
+.anomaly-row {
+  background-color: #491719 !important; /* Dark red for risk */
+  color: #ff7b72;
+  font-weight: 600;
+}
+.anomaly-row td {
+  border-color: #6a1a1a !important;
 }
